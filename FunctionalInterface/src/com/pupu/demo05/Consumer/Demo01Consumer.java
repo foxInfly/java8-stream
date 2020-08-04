@@ -8,11 +8,11 @@ import java.util.function.Consumer;
  */
 public class Demo01Consumer {
 
-    private static void consumerString(Consumer<String> consumer){
-        consumer.accept("Hello");
+    private static void consumerString(String name,Consumer<String> consumer){
+        consumer.accept(name);
     }
 
     public static void main(String[] args) {
-        consumerString(s-> System.out.println(s.toUpperCase()));
+        consumerString("Hello",s-> System.out.println(s.toUpperCase()));
     }
 }
