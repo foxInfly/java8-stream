@@ -7,4 +7,5 @@ package com.pupu.demo1.FuncationalInterface;
  * @since : 2020-08-04 07:27
  */
 public interface MyfactionaInterface {
+    void myMethod();
 }
