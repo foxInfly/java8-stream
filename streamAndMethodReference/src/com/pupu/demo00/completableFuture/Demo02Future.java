@@ -26,7 +26,7 @@ public class Demo02Future {
         });
 
         future.get();
-        System.out.println(Thread.currentThread().getName()+":runAsync() test ...");
+        System.out.println(Thread.currentThread().getName()+":runAsync() arithmetic ...");
     }
 
     //有返回值
