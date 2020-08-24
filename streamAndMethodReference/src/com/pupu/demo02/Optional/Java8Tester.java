@@ -8,7 +8,6 @@ import java.util.Optional;
 public class Java8Tester {
    public static void main(String args[]){
    
-      Java8Tester java8Tester = new Java8Tester();
 
 
       ArrayList<String> list = new ArrayList<>();
