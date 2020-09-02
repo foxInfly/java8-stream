@@ -43,7 +43,7 @@ enum  Season1 {
 
     //2.私有化的构造器
 
-    private Season1(String seasonName, String seasonDesc) {
+    Season1(String seasonName, String seasonDesc) {
         this.seasonName = seasonName;
         this.seasonDesc = seasonDesc;
     }
