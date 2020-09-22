@@ -1,4 +1,4 @@
-package com.pupu.encryptionAndSecurity.demo01.Base64;
+package com.pupu.encryptionAndSecurity.demo01.demo2_Base64;
 
 import java.util.Base64;
 
@@ -22,5 +22,14 @@ public class Demo01Base64 {
         System.out.println(b64encoded);
         byte[] bytes = Base64.getDecoder().decode(b64encoded);
         System.out.println(new String(bytes));
+        System.out.println("=====================================================");
+        String str = "中国";
+        Base64.Encoder encoder = Base64.getEncoder();//1.获取base64编码器
+        String base64Str = encoder.encodeToString(str.getBytes());//2.用编译器把普通字符串编译成对应的base64字符串
+        System.out.println(base64Str);
+        Base64.Decoder decoder = Base64.getDecoder();//3.获取base64解码器
+        byte[] decodebase64str = decoder.decode(base64Str);//4.把指定的base64字符串解码成正常的字符串；
+        System.out.println(new String(decodebase64str));
+
     }
 }
