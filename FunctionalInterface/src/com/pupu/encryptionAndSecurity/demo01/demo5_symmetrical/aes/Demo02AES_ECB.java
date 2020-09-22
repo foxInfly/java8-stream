@@ -1,7 +1,6 @@
-package com.pupu.encryptionAndSecurity.demo01.aes;
+package com.pupu.encryptionAndSecurity.demo01.demo5_symmetrical.aes;
 
 import javax.crypto.Cipher;
-import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import java.security.GeneralSecurityException;
@@ -45,7 +44,7 @@ public class Demo02AES_ECB {
         IvParameterSpec ivps = new IvParameterSpec(iv,0,16);
         //如果密钥大于128, 会抛出java.security.InvalidKeyException: Illegal key size 异常. 因为密钥长度是受限制的,
         // java运行时环境读到的是受限的policy文件.
-        // 文件位于${java_home}/jre/lib/security, 这种限制是因为美国对软件出口的控制.
+        // 文件位于${java_home}/jre/lib/security, 这种限制是因为美国对软件出口的控制.下载未限制的替换掉
         cipher.init(Cipher.ENCRYPT_MODE, keySpec, ivps);
 
         byte[] data = cipher.doFinal(input);

@@ -1,4 +1,4 @@
-package com.pupu.encryptionAndSecurity.demo01.deo3_hash;
+package com.pupu.encryptionAndSecurity.demo01.demo3_hash;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

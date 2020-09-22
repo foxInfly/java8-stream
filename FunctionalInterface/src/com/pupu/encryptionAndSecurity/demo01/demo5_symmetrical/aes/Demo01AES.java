@@ -1,4 +1,4 @@
-package com.pupu.encryptionAndSecurity.demo01.aes;
+package com.pupu.encryptionAndSecurity.demo01.demo5_symmetrical.aes;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -15,7 +15,7 @@ import java.util.Base64;
 public class Demo01AES {
     public static void main(String[] args) throws Exception {
         // 原文:
-        String message = "Hello, world!";
+        String message = "Hello, world!Hello, world!Hello, world!Hello, world!Hello, world!";
         System.out.println("原文: " + message);
 
         // 128位密钥 = 16 bytes Key:
@@ -24,7 +24,10 @@ public class Demo01AES {
         // 加密:
         byte[] data = message.getBytes("UTF-8");
         byte[] encrypted = encrypt(key, data);
-        System.out.println("加密后的密文: " + Base64.getEncoder().encodeToString(encrypted));
+        System.out.println("加密后的密文: " +new String(encrypted));
+        System.out.println("加密后的密文再base64生成摘要: " + Base64.getEncoder().encodeToString(encrypted));
+
+
         // 解密:
         byte[] decrypted = decrypt(key, encrypted);
         System.out.println("解密后的密文: " + new String(decrypted, "UTF-8"));
@@ -40,6 +43,8 @@ public class Demo01AES {
      */
     public static byte[] encrypt(byte[] key, byte[] input) throws GeneralSecurityException {
         //根据算法名称/工作模式/填充模式获取Cipher实例；
+        //工作模式：ECB/CBC/PCBC/CTR/...
+        //填充模式：NoPadding/PKCS5Padding/PKCS7Padding/...
         Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
 
         //根据算法名称初始化一个SecretKey实例，密钥必须是指定长度；
