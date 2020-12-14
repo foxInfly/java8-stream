@@ -4,8 +4,6 @@ package com.pupu.demo00.completableFuture;
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
-import java.util.function.BiConsumer;
-import java.util.function.Function;
 
 /**
  *
