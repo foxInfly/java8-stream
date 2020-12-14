@@ -2,6 +2,8 @@ package com.pupu.demo06.Predicate;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.function.Predicate;
 
 /**
@@ -33,4 +35,7 @@ public class DemoTest {
         }
         return list;
     }
+
+
+
 }

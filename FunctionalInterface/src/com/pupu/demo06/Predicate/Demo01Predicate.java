@@ -2,7 +2,7 @@ package com.pupu.demo06.Predicate;
 
 import java.util.function.Predicate;
 
-/**
+/**Predicate谓语，断言，
  * @author : lipu
  * @since : 2020-08-04 22:48
  */
