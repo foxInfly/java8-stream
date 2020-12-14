@@ -3,7 +3,7 @@ package com.pupu.demo04.Supplier;
 import java.util.function.Supplier;
 
 /**
- * Supplier供应者，根据给定的入参生成指定类型的返回值
+ * Supplier供应者，生产者，根据给定的入参生成指定类型的返回值
  *
  * @author : lipu
  * @since : 2020-08-04 21:58
