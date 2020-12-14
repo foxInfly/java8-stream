@@ -22,11 +22,11 @@ public class Java8Tester {
 
       //返回空的 Optional 实例。
       Optional<Object> empty = Optional.empty();
-      // 此方式不可为null
+      // 此方式不可为null,是null 会报空指针
       Optional<String> optionalStr = Optional.of("Hello Optional.isPresent");
       // 此方式不可为null,是null 会报空指针
 //      Optional<String> optionalNul = Optional.of(null);
-      // 此方式不可为null
+      // 此方式不可为null,是null 会报空指针
       Optional<List<String>> optionalListStr = Optional.of(list);
       // 此方式可以为null
       Optional<Object> optional1 = Optional.ofNullable(null);

@@ -37,8 +37,10 @@ public class OptionalOfNullListDemo1 {
 
         System.out.println("------------------------- ");
 
-        System.out.println( optionalListStr.filter(a -> a.size() > 4)
-                .orElse(null));
+        List<String> list1 = new ArrayList<>();
+        list1.add("失败");
+        System.out.println( optionalListStr.filter(a -> a.size() > 6)
+                .orElse(list1));
     }
 }
 
