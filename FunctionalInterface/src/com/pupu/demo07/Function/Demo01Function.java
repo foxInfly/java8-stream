@@ -2,7 +2,7 @@ package com.pupu.demo07.Function;
 
 import java.util.function.Function;
 
-/**
+/**Function,把给定的参数变成另一个类型的参数以及处理
  * @author : lipu
  * @since : 2020-08-05 06:42
  */

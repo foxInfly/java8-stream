@@ -14,6 +14,6 @@ public class Demo02FunctionAndThe {
     }
 
     public static void main(String[] args) {
-        method("10",t->Integer.valueOf(t),t->t-2);
+        method("10", Integer::valueOf, t->t-2);
     }
 }
