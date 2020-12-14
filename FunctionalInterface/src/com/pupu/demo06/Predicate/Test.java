@@ -28,10 +28,5 @@ public class Test {
         for (Map<String, Object> map : maps) {
             System.out.println(map);
         }
-        System.out.println("==========================");
-        list.stream().filter(alarmTypeFilter).forEach(map -> resultList.add(map));
-        for (Map<String, Object> map : resultList) {
-            System.out.println(map);
-        }
     }
 }
